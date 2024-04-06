@@ -25,4 +25,20 @@ Dive into our documentation to learn more about implementing and contributing to
 
 **Join us in shaping the future of collaborative teamwork. Explore, contribute, and let's synchronize for success with SYNCATE.**
 
+High-Level Design
+Core Simulator: The main engine that runs simulation cycles, manages agent states, and coordinates interactions.
+Agent Module: Defines basic agent behaviors and properties. This module can be extended to create more complex agents.
+Plugin Framework: Allows for the dynamic addition of new behaviors or rules without altering the core simulator code.
+
+Running main.py should now show the agents acting according to both the base behavior defined in agent.py and any behaviors added by plugins. This basic setup demonstrates the plug-in architecture. You can extend it by creating more sophisticated agents, environments, and plugins that demonstrate various SYNCATE principles.
+Environment Module: Represents the simulation environment where agents interact.
+
+SYNCATE_Simulator/
+├── main.py               # Entry point of the simulator.
+├── agent.py              # Defines the base Agent class.
+├── environment.py        # Defines the simulation environment.
+└── plugins               # Directory for plugin modules.
+    └── __init__.py       # Makes Python treat the directories as packages.
+
+
 ---
