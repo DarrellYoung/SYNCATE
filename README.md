@@ -35,9 +35,13 @@ Environment Module: Represents the simulation environment where agents interact.
 
 SYNCATE_Simulator/
 ├── main.py               # Entry point of the simulator.
+
 ├── agent.py              # Defines the base Agent class.
+
 ├── environment.py        # Defines the simulation environment.
+
 └── plugins               # Directory for plugin modules.
+
     └── __init__.py       # Makes Python treat the directories as packages.
 
 
